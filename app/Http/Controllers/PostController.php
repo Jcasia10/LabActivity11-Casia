@@ -42,7 +42,8 @@ class PostController extends Controller
         $data['is_published'] = $request->boolean('is_published');
         $data['published_at'] = $data['is_published'] ? now() : null;
 
-        $post = $request->user()->author->posts()->create($data);
+        $author = $request->user()->author()->firstOrFail();
+        $post = $author->posts()->create($data);
         $post->tags()->sync($tagIds);
 
         return redirect()->route('posts.show', $post);
