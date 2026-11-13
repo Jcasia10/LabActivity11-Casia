@@ -1,7 +1,7 @@
-# Lab Activity 10 - Barangay Bulletin
+# Lab Activity 11 - Barangay Bulletin
 
 The Barangay Matina Crossing Hall in Davao City still posts announcements (clean-up drives, Bakuna schedules, curfew reminders, ayuda payouts) on a cork board outside the hall.
-Kapitan wants an online Barangay Bulletin, a small blog where barangay officials (authors) publish posts that residents can browse, search and page through. 
+Kapitan wants an online Barangay Bulletin, a small blog where barangay officials (authors) publish posts that residents can browse, search, tag, and comment on.
 
 ## Personalization
 
@@ -10,6 +10,12 @@ Kapitan wants an online Barangay Bulletin, a small blog where barangay officials
 - Birthday post date: October 13, 2026
 - Custom category: Community
 - Posts per page: 6, "Casia" have 5 letters but according to the instruction we use 6 as the minimum
+- Tags: Purok Casia, Urgent, Libre, Schedule, and Community
+
+## Seeded accounts
+
+- Lola Casia: `lola.casia@bulletin.test` / `bulletin2026`
+- Kagawad Julianne Marie Casia: `kagawad.casia@bulletin.test` / `bulletin2026`
 
 ## Run locally
 
@@ -37,4 +43,4 @@ not included in the repository.
 - [x] 7. Pagination: The implementation has `paginate(6)`, `withQueryString()`, `links()`, and a showing-count line. Casia has five letters, so the lab minimum of 6 applies.
 - [x] 8. Show page: Published posts use `findOrFail`, drafts return 404, views increment through `save()`, and counts appear in the list and detail page.
 - [x] 9. Blade/Tailwind views: Both pages extend the layout and include escaped output, `@forelse`/`@empty`, a Pinned badge, responsive classes, and a filter form.
-- [x] 10. Authenticity: The code, personalized data, and README are complete; meaningful multi-commit history must still be maintained in the Git repository.
+- [x] 10. Lab 11: manual login, author-linked posting, validated comments, tags, eager loading, and seeded discussion data.
